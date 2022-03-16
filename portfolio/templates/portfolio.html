@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% block page_content %}
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+  body {
+    background-color: #161a1d;
+    color: #fff;
+  }
+  h2 {
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px white;
+  }
+  .animate {
+    color: #78e849;
+    letter-spacing: 2px;
+  }
+</style>
+<header
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #040d33;
+    color: #bbbbbb;
+    padding: 15px;
+  "
+>
+  <h3>Portifolio</h3>
+  <h1 style="color: white; font-size: 3rem">Letícia L. Caetano</h1>
+  <div class="header">
+    <h2>I'm a <span class="animate"></span></h2>
+  </div>
+</header>
+<main
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #f8f9fa;
+    color: #212529;
+    padding: 15px;
+  "
+>
+  <h2 style="color: #061332">Um pouco sobre mim...</h2>
+  <h4>
+    Sou formada em Sitemas de Informação e trabalho com desenvolvimento web
+    desde 2018
+  </h4>
+</main>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+  integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+  crossorigin="anonymous"
+></script>
+<script>
+  var typing = new Typed(".animate", {
+    strings: ["Web Developer", "Python Developer", "PostgreSQL Developer"],
+    typeSpeed: 120,
+    backSpeed: 70,
+    loop: true,
+  });
+</script>
+{% endblock %}

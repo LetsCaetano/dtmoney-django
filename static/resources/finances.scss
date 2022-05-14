@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------------------------
+ * Website Module CSS.
+ *
+ * -> ATENTION: Don't change imported files order. <-
+ * ------------------------------------------------------------------------------*/
+
+ @import './scss/variables';
+
+ @import './scss/reset';
+ 
+ @import './scss/defaults';
+
+ @import './scss/global';
+
+ @import './scss/header';
+
+ /*----------------------------------------
+   * GENERAL
+   * --------------------------------------*/
+ 
+ main {
+     display: flex;
+ }
+ 

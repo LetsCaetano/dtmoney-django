@@ -1,11 +1,13 @@
-{% extends "base.html" %} {% block page_content %}
-{% load static %}
+{% extends "base.html" %} {% block page_content %} {% load static %}
 
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root">
   <header class="finances-header">
     <div>
-      <img src="{% static 'assets/images/logo.svg' %}" alt="dt money" /><button
+      <img src="{% static 'assets/images/logo.svg' %}" alt="dt money" />
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#financesModal"
         type="submit"
       >
         Nova transação
@@ -36,33 +38,32 @@
         <strong>R$&nbsp;5.100,00</strong>
       </div>
     </div>
-    <div class="finances-table ">
-        <table>
-          <thead>
-            <tr>
-              <th>Título</th>
-              <th>Valor</th>
-              <th>Categoria</th>
-              <th>Data</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Freelancer de website</td>
-              <td class="deposit">R$&nbsp;6.000,00</td>
-              <td>dev</td>
-              <td>12/02/2021</td>
-            </tr>
-            <tr>
-              <td>Aluguel</td>
-              <td class="withdraw">R$&nbsp;900,00</td>
-              <td>Casa</td>
-              <td>14/02/2021</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="finances-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Valor</th>
+            <th>Categoria</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Freelancer de website</td>
+            <td class="deposit">R$&nbsp;6.000,00</td>
+            <td>dev</td>
+            <td>12/02/2021</td>
+          </tr>
+          <tr>
+            <td>Aluguel</td>
+            <td class="withdraw">R$&nbsp;900,00</td>
+            <td>Casa</td>
+            <td>14/02/2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </main>
 </div>
-{% include 'finances-modal.html' %}
-{% endblock %}
+{% include 'finances-modal.html' %} {% endblock %}

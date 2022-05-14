@@ -9,6 +9,8 @@
         "hot": "mix watch --hot",
         "prod": "npm run production",
         "production": "mix --production",
+        "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+        "lint": "eslint . --ext .ts",
         "prepare": "husky install"
     },
     "husky": {

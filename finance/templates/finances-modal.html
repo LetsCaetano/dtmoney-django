@@ -1,13 +1,8 @@
 {% load static %}
-<div class="ReactModalPortal">
-  <div class="finances-modal-overlay">
-    <div
-      class="finances-modal-content"
-      tabindex="-1"
-      role="dialog"
-      aria-modal="true"
-    >
-      <button type="button">
+<div class="modal" id="financesModal">
+  <div class="modal-dialog finances-modal-overlay">
+    <div class="modal-content finances-modal-content">
+      <button type="button" data-bs-dismiss="modal" aria-label="Close">
         <img
           src="{% static 'assets/images/close.svg'%}"
           alt="Fechar modal"

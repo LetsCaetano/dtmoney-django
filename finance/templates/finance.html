@@ -12,5 +12,30 @@
       </button>
     </div>
   </header>
+  <main class="finances-main">
+    <div class="finances-summary">
+      <div>
+        <header>
+          <p>Entradas</p>
+          <img src="{% static 'assets/images/income.svg' %}" alt="Entradas" />
+        </header>
+        <strong>R$&nbsp;6.000,00</strong>
+      </div>
+      <div>
+        <header>
+          <p>Saídas</p>
+          <img src="{% static 'assets/images/outcome.svg' %}" alt="Saídas" />
+        </header>
+        <strong>-R$&nbsp;900,00</strong>
+      </div>
+      <div class="highlight-background">
+        <header>
+          <p>Total</p>
+          <img src="{% static 'assets/images/total.svg' %}" alt="Total" />
+        </header>
+        <strong>R$&nbsp;5.100,00</strong>
+      </div>
+    </div>
+  </main>
 </div>
 {% endblock %}

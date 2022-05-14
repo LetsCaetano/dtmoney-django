@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------------------------
+ * Reset
+ * ------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font: $default-font-size;
+    font-weight: 400;
+    font-family: $sans-font-family;
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: 0 solid #e5e7eb;
+}
+
+input,
+textarea {
+    font-size: $default-font-size;
+}

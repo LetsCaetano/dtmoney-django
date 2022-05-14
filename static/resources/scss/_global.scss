@@ -49,7 +49,7 @@ button {
     cursor: not-allowed;
 }
 
-.finance-modal-overlay {
+.finances-modal-overlay {
     background: rgb(0, 0, 0, 0.5);
     position: fixed; //Ajuda quando a tela possui scrool
     top:0;
@@ -62,7 +62,7 @@ button {
     justify-content: center;
 }
 
-.finance-modal-content {
+.finances-modal-content {
     width: 100%;
     max-width: 576px;
     background: var(--background);
@@ -71,7 +71,7 @@ button {
     border-radius: 0.24rem;
 }
 
-.finance-modal-close {
+.finances-modal-close {
     position: absolute;
     right: 1.5rem;
     top: 1.5rem;
